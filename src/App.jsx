@@ -12,6 +12,7 @@ export const ACTIONS = {
 }
 
 function reducer(state, {type, payload}){
+  // eslint-disable-next-line default-case
   switch(type) {
     case ACTIONS.ADD_DIGIT:
       if ( payload.digit ==="0" && state.currentOperand === "0") {
