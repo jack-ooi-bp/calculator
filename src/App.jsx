@@ -56,6 +56,7 @@ function reducer(state, {type, payload}){
           }
         }
 
+      // eslint-disable-next-line no-fallthrough
       case ACTIONS.DELETE_DIGIT:
         if (state.overwrite){
           return{
