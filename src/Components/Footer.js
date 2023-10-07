@@ -1,5 +1,11 @@
 import './Footer.css';
-// import {Link} from "react-router-dom"
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faGithub,
+//   faLinkedin,
+//   faMedium,
+//   faStackOverflow,
+// } from "@fortawesome/free-brands-svg-icons";
 
 function getCurrentYear(){
     const currentDate = new Date();
@@ -11,7 +17,12 @@ const socials = [
   {
     icon: './github-sign.png',
     url: 'https://github.com/Ravenslayer998/calculator',
-  }
+  },
+
+  // {
+  //   icon: faLinkedin,
+  //   url: 'https://www.linkedin.com/in/thooi998/',
+  // }
 ]
 
 const Footer = () => {

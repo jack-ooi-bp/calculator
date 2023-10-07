@@ -2,7 +2,6 @@ import { useReducer } from 'react';
 import './styles.css';
 import DigitButton from './DigitButton';
 import OperationButton from './OperationButton';
-import { Routes } from 'react-router-dom';
 
 export const ACTIONS = {
   ADD_DIGIT: "add-digit",
