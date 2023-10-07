@@ -1,5 +1,5 @@
 import './Footer.css';
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 
 function getCurrentYear(){
     const currentDate = new Date();
@@ -7,18 +7,33 @@ function getCurrentYear(){
 
 }
 
+const socials = [
+  {
+    icon: './github-sign.png',
+    url: 'https://github.com/Ravenslayer998/calculator',
+  }
+]
+
 const Footer = () => {
     return (
       <footer>
         <div className="container">
           <p>Copyright @ {getCurrentYear()}</p>
         </div>
-          
-        <div className='Github Image'>
-            <button>
-            <a onClick='https://github.com/Ravenslayer998/calculator' rel='noopener' target = 'blank'></a>
-            <img src='./github-sign.png'></img>
-        </button>
+      
+        <div className='Image'>
+          <button>
+          {socials.map(({icon, url})=>(
+                <a
+                key={url}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                  <img src={icon} key={url} alt='github icon'></img>
+                </a>
+              ))}
+          </button>
         </div>
       </footer>
     );
