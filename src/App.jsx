@@ -160,6 +160,6 @@ function App() {
      <button className='span-two' onClick={() => dispatch({type: ACTIONS.EVALUATE})}>=</button>
     </div>
   );
-};
+}
 
 export default App;
