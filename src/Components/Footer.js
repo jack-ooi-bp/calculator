@@ -1,4 +1,4 @@
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, Center, HStack } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -36,17 +36,14 @@ const Footer = () => {
         left={0}
         right={0}
         translateY={0}
-        transitionProperty="transform"
-        transitionDuration=".3s"
-        transitionTimingFunction="ease-in-out"
+
         backgroundColor="#18181b"
         >
-
-        <Box color="white" maxWidth="1280px" margin="0 auto">
+        <Box color="white" maxWidth="0 auto" margin="0 auto">
           <HStack
             px={16}
             py={4}
-            justifyContent="space-between"
+            justifyContent="flex-start"
             alignItems="center"
           >
             <button>
@@ -58,7 +55,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   >
-                    <FontAwesomeIcon icon={icon} size="2x" key={url} color='white'/>
+                    <FontAwesomeIcon icon={icon} size="3x" key={url} color='white'/>
                   </a>
                 ))}
               </HStack>
