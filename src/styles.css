@@ -53,3 +53,15 @@ background-color: rgba(255,255,255,.75);
  color: white;
  font-size: 2.5rem;
 }
+
+.Footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+button{
+    background-color: rgba(0,0,0,0);
+    border-style: hidden;
+
+}
