@@ -1,4 +1,4 @@
-import { Box, Center, HStack } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
