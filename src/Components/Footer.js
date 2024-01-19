@@ -22,10 +22,6 @@ const socials = [
 const Footer = () => {
   return (
     <footer className="Footer">
-      <div className="Copyright">
-        <p>Copyright @ {getCurrentYear()}</p>
-      </div>
-
       <Box
         position="bottom"
         top={0}
@@ -34,7 +30,7 @@ const Footer = () => {
         translateY={0}
         backgroundColor="#18181b"
       >
-        <Box color="white" maxWidth="0 auto" margin="0 auto">
+        <Box color="white" maxWidth="auto" margin="auto">
           <HStack
             px={16}
             py={5}
@@ -60,6 +56,13 @@ const Footer = () => {
                 ))}
               </HStack>
             </button>
+            <Box>
+              <HStack>
+                <div className="Copyright">
+                  <p>Copyright @ {getCurrentYear()}</p>
+                </div>
+              </HStack>
+            </Box>
           </HStack>
         </Box>
       </Box>
