@@ -70,3 +70,7 @@ button{
 .FooterBox{
     justify-content: flex-start
 }
+
+.button .icon{
+    padding-right: 5px;
+}
