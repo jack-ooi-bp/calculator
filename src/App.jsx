@@ -4,6 +4,23 @@ import DigitButton from "./DigitButton";
 import OperationButton from "./OperationButton";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCSbhBIhD4raxYUdMaEPmk_RjWSLyUq3PM",
+  authDomain: "personalwebsite-36ca2.firebaseapp.com",
+  projectId: "personalwebsite-36ca2",
+  storageBucket: "personalwebsite-36ca2.appspot.com",
+  messagingSenderId: "391405365028",
+  appId: "1:391405365028:web:c759fd430c7368c97535b1",
+  measurementId: "G-K0DQM1DTDF"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// eslint-disable-next-line no-unused-vars
+const analytics = getAnalytics(app);
 
 export const ACTIONS = {
   ADD_DIGIT: "add-digit",
