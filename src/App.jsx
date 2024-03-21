@@ -4,17 +4,19 @@ import DigitButton from "./DigitButton";
 import OperationButton from "./OperationButton";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+
+//Firebase import
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCSbhBIhD4raxYUdMaEPmk_RjWSLyUq3PM",
-  authDomain: "personalwebsite-36ca2.firebaseapp.com",
-  projectId: "personalwebsite-36ca2",
-  storageBucket: "personalwebsite-36ca2.appspot.com",
-  messagingSenderId: "391405365028",
-  appId: "1:391405365028:web:c759fd430c7368c97535b1",
-  measurementId: "G-K0DQM1DTDF"
+  apiKey: "AIzaSyBKghiJtbL3y0nyjSQ6uNYadZAxliyKxuA",
+  authDomain: "personal-website-3580d.firebaseapp.com",
+  projectId: "personal-website-3580d",
+  storageBucket: "personal-website-3580d.appspot.com",
+  messagingSenderId: "508647798578",
+  appId: "1:508647798578:web:fd5d485ef69239b4b0892b",
+  measurementId: "G-EYQB93VBZY"
 };
 
 // Initialize Firebase
